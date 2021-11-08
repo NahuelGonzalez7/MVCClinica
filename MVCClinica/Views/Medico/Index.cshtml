@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model IEnumerable<MVCClinica.Models.Medico>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h2>Medicos</h2>
+    <p>@Html.ActionLink("Agregar Medico", "Create", "Medico")</p>
+    @using (Html.BeginForm("SearchByEspecialidad", "Medico", FormMethod.Get))
+    {
+        @Html.TextBox("especialidad", null)
+        <input type="submit" value="Get" />
+    }
+    <table>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Nombre)</th>
+            <th>@Html.DisplayNameFor(model => model.Apellido)</th>
+            <th>@Html.DisplayNameFor(model => model.Especialidad)</th>
+            <th>@Html.DisplayNameFor(model => model.NroMatricula)</th>
+            <th>@Html.DisplayNameFor(model => model.FechaNacimiento)</th>
+            <th>@Html.DisplayNameFor(model => model.Ciudad)</th>
+
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
+                <td>@Html.DisplayFor(modelItem => item.Apellido)</td>
+                <td>@Html.DisplayFor(modelItem => item.Especialidad)</td>
+                <td>@Html.DisplayFor(modelItem => item.NroMatricula)</td>
+                <td>@Html.DisplayFor(modelItem => item.FechaNacimiento)</td>
+                <td>@Html.DisplayFor(modelItem => item.Ciudad)</td>
+                <td>@Html.ActionLink("Detalle", "Detail", new { id = item.ID })</td>
+                <td>@Html.ActionLink("Eliminar", "Delete", new { id = item.ID })</td>
+                <td>@Html.ActionLink("Modificar", "Edit", new { id = item.ID })</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

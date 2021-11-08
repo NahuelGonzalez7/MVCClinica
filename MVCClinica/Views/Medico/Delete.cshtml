@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model MVCClinica.Models.Medico
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h2>Eliminar medico</h2>
+    <br />
+    <p>¿Esta seguro que desea eliminar el medico?</p>
+    @using (Html.BeginForm("Delete", "Medico", FormMethod.Post))
+    {
+        <fieldset>
+            <legend>Medico que va a eliminar</legend>
+            <div class="label">@Html.DisplayNameFor(model => model.Nombre)</div>
+            <div class="text">@Html.DisplayFor(model => model.Nombre)</div>
+
+            <div class="label">@Html.DisplayNameFor(model => model.Apellido)</div>
+            <div class="text">@Html.DisplayFor(model => model.Apellido)</div>
+
+            <div class="label">@Html.DisplayNameFor(model => model.Especialidad)</div>
+            <div class="text">@Html.DisplayFor(model => model.Especialidad)</div>
+
+            <div class="label">@Html.DisplayNameFor(model => model.NroMatricula)</div>
+            <div class="text">@Html.DisplayFor(model => model.NroMatricula)</div>
+        </fieldset>
+        <p>
+            <input type="submit" value="Delete" />
+        </p>
+    }
+    @Html.ActionLink("Volver a la lista", "Index", "Medico")
+</body>
+</html>

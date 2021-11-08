@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model MVCClinica.Models.Medico
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    @using (Html.BeginForm("Edit", "Medico", FormMethod.Post))
+    {
+        @Html.HiddenFor(model =>model.ID)
+        <div>
+            @Html.LabelFor(model => Model.Nombre)
+            @Html.EditorFor(model => Model.Nombre)
+            @Html.ValidationMessageFor(model => Model.Nombre)
+        </div>
+        <br />
+        <div>
+            @Html.LabelFor(model => Model.Apellido)
+            @Html.EditorFor(model => Model.Apellido)
+            @Html.ValidationMessageFor(model => Model.Apellido)
+        </div>
+        <br />
+        <div>
+            @Html.LabelFor(model => Model.Especialidad)
+            @Html.EditorFor(model => Model.Especialidad)
+            @Html.ValidationMessageFor(model => Model.Especialidad)
+        </div>
+        <br />
+        <div>
+            @Html.LabelFor(model => Model.NroMatricula)
+            @Html.EditorFor(model => Model.NroMatricula)
+            @Html.ValidationMessageFor(model => Model.NroMatricula)
+        </div>
+        <br />
+        <div>
+            @Html.LabelFor(model => Model.FechaNacimiento)
+            @Html.EditorFor(model => Model.FechaNacimiento)
+            @Html.ValidationMessageFor(model => Model.FechaNacimiento)
+        </div>
+        <br />
+        <div>
+            @Html.LabelFor(model => Model.Ciudad)
+            @Html.EditorFor(model => Model.Ciudad)
+            @Html.ValidationMessageFor(model => Model.Ciudad)
+        </div>
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    }
+    @Html.ActionLink("Volver a la lista", "Index", "Medico")
+</body>
+</html>
