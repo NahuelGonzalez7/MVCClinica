@@ -1,4 +1,5 @@
 ﻿using MVCClinica.Admin;
+using MVCClinica.Filters;
 using MVCClinica.Models;
 using System;
 using System.Collections.Generic;
@@ -15,11 +16,14 @@ namespace MVCClinica.Controllers
         {
             return View("Index", AdmMedico.Listar());
         }
+
         public ActionResult Create()
         {
             Medico medico = new Medico();
             return View("Create", medico);
         }
+
+        [MyFilterAction]
         [HttpPost]
         public ActionResult Create(Medico medico)
         {
@@ -95,6 +99,22 @@ namespace MVCClinica.Controllers
             if (especialidad == null)
                 return RedirectToAction("Index");
             return View("Index", AdmMedico.ListarEspecialidad(especialidad));
+        }
+
+        public ActionResult SearchByName(string name, string surname)
+        {
+            if (name == null && surname == null)
+            {
+                return RedirectToAction("Index");
+            }
+            return View("Index", AdmMedico.ListFullName(name, surname));
+
+            //var medicos = (from medic in context.Medicos
+            //               where medic.Nombre == name
+            //               where medic.Apellido == surname
+            //               select medic).ToList();
+
+            //return View("Index", medicos);
         }
     }
 }

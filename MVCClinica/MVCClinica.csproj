@@ -102,8 +102,10 @@
   <ItemGroup>
     <Compile Include="Admin\AdmMedico.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MedicoController.cs" />
     <Compile Include="Data\DbMedicoContext.cs" />
+    <Compile Include="Filters\MyFilterAction.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -128,6 +130,9 @@
     <Content Include="Views\Medico\Detail.cshtml" />
     <Content Include="Views\Medico\Edit.cshtml" />
     <Content Include="Views\Medico\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\SearchByName.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

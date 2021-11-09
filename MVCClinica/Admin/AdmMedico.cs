@@ -52,5 +52,15 @@ namespace MVCClinica.Admin
                                                 select o).ToList();
             return medicosEspecialidad;
         }
+
+        public static List<Medico> ListFullName(string name, string surname)
+        {
+            var medicos = (from medic in context.Medicos
+                           where medic.Nombre == name
+                           //where medic.Apellido == surname
+                           select medic).ToList();
+
+            return medicos;
+        }
     }
 }

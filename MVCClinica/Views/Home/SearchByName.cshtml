@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SearchByName</title>
+</head>
+<body>
+    <p> Search by Name </p>
+    @using (Html.BeginForm("SearchByName", "Medic", FormMethod.Get))
+    {
+        @Html.TextBox("name",null)
+        @Html.TextBox("surname",null)
+        <input type="submit" value="Get" />
+    }
+</body>
+</html>
