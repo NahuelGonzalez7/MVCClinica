@@ -1,19 +1,35 @@
 ﻿
 @{
-    Layout = null;
+    ViewBag.Title = "Index";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <div> 
-        <h1> Welcome to the Teathre's System </h1>
-        <p> @Html.ActionLink("Ir a operas","index","Opera")</p>
-    </div>
-</body>
-</html>
+
+<h1> Welcome to the Teathre's System </h1>
+<p> @ViewBag.Fecha </p>
+<p> @Html.ActionLink("Ir a operas","Index","Opera")</p>
+
+    @section SideBarIzq
+        {
+        <div id="images">
+            <img src="~/Images/Interior_of_Sydney_Opera_House_Concert_Hall_during_performance.jpg" />
+            <img src="~/Images/panorama-del-interior-del-teatro-de-la-ópera-de-sydney-11538783.jpg" />
+            <img src="~/Images/índice.jpg" />
+        </div>
+    }
+
+    @section SideBarDer
+        {
+        <p>
+            La Ópera de Sídney, situada en la ciudad de Sídney, estado de Nueva Gales del Sur,
+            Australia, es uno de los edificios más famosos y distintivos del siglo XX.
+            Declarado en 2007 Patrimonio de la Humanidad, fue diseñado por el arquitecto danés Jørn Utzon en 1957 e
+            inaugurado el 20 de octubre de 1973.
+        </p>
+
+        <p>
+            En el edificio se realizan obras de teatro, ballet, ópera o producciones musicales.
+            Es sede de la compañía de Ópera de Australia, la Compañía de Teatro de Sídney y la Orquesta Sinfónica de Sídney.
+            Está administrada por la Opera House Trust, un organismo público del gobierno estatal de Nueva Gales del Sur.
+        </p>
+    }

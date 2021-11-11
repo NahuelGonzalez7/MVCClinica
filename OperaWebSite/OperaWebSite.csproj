@@ -94,7 +94,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Main.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\220px-GiuseppeVerdi.jpg" />
+    <Content Include="Images\Exterior1.jpg" />
+    <Content Include="Images\Exteriori2.jpg" />
+    <Content Include="Images\Exteriori3.jpg" />
+    <Content Include="Images\GiacomoPuccini.jpg" />
+    <Content Include="Images\Interior_of_Sydney_Opera_House_Concert_Hall_during_performance.jpg" />
+    <Content Include="Images\Mozart-small.jpg" />
+    <Content Include="Images\panorama-del-interior-del-teatro-de-la-ópera-de-sydney-11538783.jpg" />
+    <Content Include="Images\Sydney VI.jpg" />
+    <Content Include="Images\índice.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +144,8 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Test\Login.cshtml" />
     <Content Include="Views\Test\SearchByTittle.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

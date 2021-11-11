@@ -13,6 +13,7 @@ namespace OperaWebSite.Controllers
         [MyFilterAction]
         public ActionResult Index()
         {
+            ViewBag.Fecha = DateTime.Today.ToLongDateString();
             return View();
         }
 
@@ -20,5 +21,7 @@ namespace OperaWebSite.Controllers
         {
             return View();
         }
+
+
     }
 }

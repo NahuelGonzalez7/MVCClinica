@@ -1,45 +1,39 @@
 ﻿@model OperaWebSite.Models.Opera
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Edit</title>
-</head>
-<body>
-    <h2>Opera Edit</h2>
-    <p>Are you sure you want to Edit this Opera?</p>
+@{
+    ViewBag.Title = "Edit";
+}
+<h2>Opera Edit</h2>
+<p>Are you sure you want to Edit this Opera?</p>
 
-    @using (Html.BeginForm("Edit", "Opera", FormMethod.Post))
-    {
-        @Html.HiddenFor(model => model.OperaId)
+@using (Html.BeginForm("Edit", "Opera", FormMethod.Post))
+{
+    @Html.HiddenFor(model => model.OperaId)
 
-        <fieldset>
-            <legend>Opera Detail</legend>
-            <div>
+    <fieldset>
+        <legend>Opera Detail</legend>
+        <div>
 
-                @Html.LabelFor(model => model.Tittle)
-                @Html.EditorFor(model => model.Tittle)
-                @Html.ValidationMessageFor(model => model.Tittle)
-            </div>
-            <div>
-                @Html.LabelFor(model => model.Composer)
-                @Html.EditorFor(model => model.Composer)
-                @Html.ValidationMessageFor(model => model.Composer)
-            </div>
-            <div>
-                @Html.LabelFor(model => model.Year)
-                @Html.EditorFor(model => model.Year)
-                @Html.ValidationMessageFor(model => model.Year)
-            </div>
-        </fieldset>
+            @Html.LabelFor(model => model.Tittle)
+            @Html.EditorFor(model => model.Tittle)
+            @Html.ValidationMessageFor(model => model.Tittle)
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Composer)
+            @Html.EditorFor(model => model.Composer)
+            @Html.ValidationMessageFor(model => model.Composer)
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Year)
+            @Html.EditorFor(model => model.Year)
+            @Html.ValidationMessageFor(model => model.Year)
+        </div>
+    </fieldset>
 
-        <p>
-            <input type="submit" value="Edit" />
-        </p>
-    }
     <p>
-        @Html.ActionLink("Back to List", "Index", "Opera")
+        <input type="submit" value="Edit" />
     </p>
-</body>
-</html>
+}
+<p>
+    @Html.ActionLink("Back to List", "Index", "Opera")
+</p>

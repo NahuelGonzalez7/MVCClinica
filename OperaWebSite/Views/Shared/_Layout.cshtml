@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Main.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="total">
+
+
+        <header>
+            <div id="Banner">
+                <img src="~/Images/Sydney VI.jpg" />
+            </div>
+            <div id="Login">
+                <p> LOGIN </p>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li> <p> @Html.ActionLink("Inicio", "index", "Opera") </p> </li>
+                <li> <p> @Html.ActionLink("Opera", "index", "Opera") </p> </li>
+                <li> <p> @Html.ActionLink("Empleado", "index", "Opera") </p> </li>
+            </ul>
+
+        </nav>
+
+        <main>
+            <sidebar id="izq">
+
+                @if (IsSectionDefined("SideBarDer"))
+                {
+                    @RenderSection("SideBarDer")
+                }
+                else
+                {
+                    <p>Adress:Bennelong Point, Sydney NSW 2000, Australia </p>
+                    <p> Telephone: +61 2 9250 7111</p>
+                }
+
+            </sidebar>
+
+
+            <content>
+                @RenderBody()
+            </content>
+
+            <sidebar id="der">
+                @if (IsSectionDefined("SideBarIzq"))
+                {
+                    @RenderSection("SideBarIzq")
+                }
+                else
+                {
+                    <img src="~/Images/Exterior1.jpg" />
+
+                    <img src="~/Images/Exteriori2.jpg" />
+
+                    <img src="~/Images/Exteriori3.jpg" />
+                }
+
+
+            </sidebar>
+        </main>
+
+        <footer>
+            <p> FOOTER </p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

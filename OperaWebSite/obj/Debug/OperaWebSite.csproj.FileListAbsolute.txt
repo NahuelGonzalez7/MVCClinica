@@ -1,4 +1,3 @@
-C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\Clase 04-11\OperaWebSite\OperaWebSite\obj\Debug\OperaWebSite.csproj.CoreCompileInputs.cache
 C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\Clase 04-11\OperaWebSite\OperaWebSite\bin\OperaWebSite.dll.config
 C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\Clase 04-11\OperaWebSite\OperaWebSite\bin\OperaWebSite.dll
 C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\Clase 04-11\OperaWebSite\OperaWebSite\bin\OperaWebSite.pdb
@@ -76,6 +75,6 @@ C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\Clase 04-11\Op
 C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\Clase 04-11\OperaWebSite\OperaWebSite\bin\es\System.Web.Webpages.Razor.resources.dll
 C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\Clase 04-11\OperaWebSite\OperaWebSite\bin\es\System.Web.Helpers.resources.dll
 C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\Clase 04-11\OperaWebSite\OperaWebSite\bin\es\System.Web.Mvc.resources.dll
-C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\Clase 04-11\OperaWebSite\OperaWebSite\obj\Debug\OperaWebSite.csproj.AssemblyReference.cache
+C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\Clase 04-11\OperaWebSite\OperaWebSite\obj\Debug\OperaWebSite.csproj.CoreCompileInputs.cache
 C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\Clase 04-11\OperaWebSite\OperaWebSite\obj\Debug\OperaWebSite.dll
 C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\Clase 04-11\OperaWebSite\OperaWebSite\obj\Debug\OperaWebSite.pdb

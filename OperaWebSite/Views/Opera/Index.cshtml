@@ -1,30 +1,23 @@
 ﻿
 @{
-    Layout = null;
+    ViewBag.Title = "Create";
 }
 
 @model IEnumerable<OperaWebSite.Models.Opera>
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <p> @Html.ActionLink("Create New", "Create", "Opera")</p>
-    <table>
-        <tr>
-            <th>@Html.DisplayNameFor(model => model.Tittle)</th>
-            <th>@Html.DisplayNameFor(model => model.Composer)</th>
-            <th>@Html.DisplayNameFor(model => model.Year)</th>
-            <th>Details</th>
-            <th>Deletes</th>
-            <th>Edit</th>
-        </tr>
+<p> @Html.ActionLink("Create New", "Create", "Opera")</p>
+<table>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Tittle)</th>
+        <th>@Html.DisplayNameFor(model => model.Composer)</th>
+        <th>@Html.DisplayNameFor(model => model.Year)</th>
+        <th>Details</th>
+        <th>Deletes</th>
+        <th>Edit</th>
+    </tr>
 
-    </table>
+
 
     @foreach (var item in Model)
     {
@@ -44,6 +37,25 @@
 
         </tr>
     }
+</table>
 
-</body>
-</html>
+@section SideBarIzq
+        {
+    <div id="Link">
+        <ul>
+            <li> <a href="https://www.youtube.com/watch?v=m8FoeABrM9Q"> RIGOLETTO de Giuseppe Verdi</a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=8WNJyOKvKkM"> La flauta mágica. La reina de la noche. W.A. Mozart. The Magic Flute. Die zauberflöte. </a></li>
+            <li> <a href="https://www.youtube.com/watch?v=MGy23IQgns8"> "Tosca" de Giacomo Puccini </a></li>
+        </ul>
+    </div>
+}
+
+@section SideBarDer
+        {
+    <a href="https://es.wikipedia.org/wiki/Giacomo_Puccini">  <img src="~/Images/GiacomoPuccini.jpg" alt="Giacomo Puccini" /></a>
+
+    <a href="https://es.wikipedia.org/wiki/Giuseppe_Verdi"> <img src="~/Images/220px-GiuseppeVerdi.jpg" alt="Giacomo Puccini" /></a>
+    
+    <a href="https://es.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart"> <img src="~/Images/Mozart-small.jpg" alt="Wolfgang Amadeus Mozart" /></a>
+    
+}
